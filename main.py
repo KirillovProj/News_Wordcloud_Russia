@@ -30,6 +30,7 @@ def get_words() -> list:
     ]]
     return result
 
+
 # Uses map of Russia mask
 def create_wordcloud():
     map_mask = np.array(Image.open('map.png'))
@@ -39,6 +40,7 @@ def create_wordcloud():
     plt.imshow(wc, interpolation='bilinear')
     plt.axis('off')
     plt.savefig('Russian_News_Wordcloud.png', format='png')
+
 
 if __name__ == '__main__':
     create_wordcloud()
